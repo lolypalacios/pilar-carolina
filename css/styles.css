@@ -1,0 +1,55 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    color: #f8f5f6; 
+    text-align: center;
+    font-family: 'Pirata One', cursive;
+    margin: 50px;
+    text-shadow: 5px 10px 30px #ec2806f3;       
+}      
+
+h2 {
+    color: #da3721;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.border, p {
+    border: 5px solid #ff5e00; 
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 28px;
+}
+
+.button {
+    background-color: #e0370c; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #f00606; 
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 600px) {
+    body{
+        background-position: center center;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 3rem; 
+    }
+
+    .border, p {
+        padding: 10px; 
+    }
+
+    .button {
+        padding: 0.8rem 1.5rem; 
+    }
+}
