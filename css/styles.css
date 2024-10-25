@@ -2,36 +2,106 @@ body {
     background-repeat: no-repeat;
     background-size: cover; 
     background-attachment: fixed;
-    color: #f8f5f6; 
+    font-family: "Rubik Wet Paint", system-ui;
     text-align: center;
-    font-family: 'Pirata One', cursive;
-    margin: 50px;
-    text-shadow: 5px 10px 30px #ec2806f3;       
-}      
-
-h2 {
-    color: #da3721;
+    padding: 20px;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-shadow: 5px 20px 40px #f70404f3;       
+}
+/*
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+*/
+h1 {
+    font-family: "Rubik Wet Paint", system-ui;
+    color: #e90808;
     font-size: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 50;
 }
 
-.border, p {
-    border: 5px solid #ff5e00; 
+p {
+    border: 5px solid #ff0000; 
+    font-family: "Rubik Wet Paint", system-ui;
     border-radius: 10px;
     padding: 20px;
     font-size: 28px;
+    color: #faf7f7;
+    font-weight: 80;
 }
 
-.button {
-    background-color: #e0370c; 
-    color: #fff;
+button {
     padding: 10px 20px;
-    border: none;
+    font-size: 16px;
+    margin: 10px;
     cursor: pointer;
+    background-color: #f11912; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
 }
 
-.button:hover {
+button:hover {
     background-color: #f00606; 
+}
+
+.hidden {
+    display: none;
+}
+
+#videoContainer {
+   margin-top: 20px;
+    /* width: 56.25vh;  
+    height: 100vh;  
+    background-color: black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+#imageContainer {
+    margin-top: 20px;
+}
+
+
+/*tamaño foto*/
+img {
+    width: 100%;
+    
+    height: auto;
+}
+
+/*tamaño vídeo*/
+video {
+    width: 100%;  /* Ajustar el video al ancho del contenedor */
+    height: 100%; /* Ajustar el video a la altura del contenedor */
+    object-fit: cover;  /* Asegurar que el video cubra el contenedor manteniendo la proporción */
+}
+
+/*botón volver a inicio*/
+
+#closeImageButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #f11707;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#closeImageButton:hover {
+    background-color: #c82333;
 }
 
 /* Media Queries para dispositivos móviles */

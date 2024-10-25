@@ -3,20 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>juega o muere</title>
+    <title>Página con Video e Imagen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
     
-
 </head>
-<body background="img/gif.gif">
-    <h1>Juega o Muere</h1>
-    <h2>Prueba 10</h2>
-    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, vel earum dolor temporibus non natus neque, .</P>
-    <button class="button">VIDEO</button>
+<body background="img/imagen.jpg">
+    <div class="container">
+        <div class="content">
+            <h1>Título de la Página</h1>
+            <p>Este es un párrafo que se ocultará cuando comience el video.</p>
     
-    
+            <button id="playVideoButton">Abrir Video</button>
+        </div>
+
+        <div id="videoContainer" class="hidden">
+            <video id="video" width="640" height="360" controls>
+                <source src="video/pilarcarolina.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+  
+        <div id="imageButtonContainer" class="hidden">
+            <button id="showImageButton">Mostrar Imagen</button>
+        </div>
+
+        <div id="imageContainer" class="hidden">
+            <img id="image" src="img/pilarcarolina.jpg" alt="Imagen">
+            <button id="closeImageButton">Volver a Inicio</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
