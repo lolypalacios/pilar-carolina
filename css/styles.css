@@ -28,6 +28,21 @@ h1 {
     color: #e90808;
     font-size: 30px;
     font-weight: 50;
+    animation: parpadeo 2s infinite;
+}
+
+/* Animación de parpadeo */
+@keyframes parpadeo {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.hidden {
+    display: none;
 }
 
 p {
@@ -123,3 +138,5 @@ video {
         padding: 0.8rem 1.5rem; 
     }
 }
+
+
