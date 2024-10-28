@@ -11,7 +11,10 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    text-shadow: 5px 20px 40px #f70404f3;       
+    text-shadow: 5px 20px 40px #f70404f3;
+
+    /*Para quitar scroll en la pagina*/
+    overflow: hidden;      
 }
 /*
 body {
