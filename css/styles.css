@@ -106,7 +106,7 @@ video {
 
 /*botón volver a inicio*/
 
-#closeImageButton {
+#miUbicacion {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
@@ -116,9 +116,15 @@ video {
     border-radius: 5px;
 }
 
-#closeImageButton:hover {
-    background-color: #c82333;
+#miUbicacion {
+    background-color: #fa0921;
 }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /* Media Queries para dispositivos móviles */
 @media (max-width: 600px) {
